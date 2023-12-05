@@ -1,0 +1,109 @@
+
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Perro',
+      price: 23,
+    }
+  });
+
+  db.products.updateOne(
+    // query
+    {_id: 3},
+    // change => operators
+    {
+      $set: {
+        name: 'Gato',
+        price: 25,
+      }
+    });
+
+    db.products.updateOne(
+      // query
+      {_id: 2},
+      // change => operators
+      {
+        $set: {
+          name: 'Gusano',
+          price: 1,
+        }
+      });
+
+      db.products.updateOne(
+        // query
+        {_id: 4},
+        // change => operators
+        {
+          $set: {
+            name: 'pez rosado con  manos',
+            price: 25,
+          }
+        });
+
+        db.products.updateOne(
+          // query
+          {_id: 5},
+          // change => operators
+          {
+            $set: {
+              name: 'Lagarto',
+              price: 1000,
+            }
+          });
+
+          db.products.updateOne(
+            // query
+            {_id: 6},
+            // change => operators
+            {
+              $set: {
+                name: 'sapo',
+                price: 0,
+              }
+            });
+            db.products.updateOne(
+              // query
+              {_id: 7},
+              // change => operators
+              {
+                $set: {
+                  name: 'mono sin nariz',
+                  price: 100,
+                }
+              });
+              db.products.updateOne(
+                // query
+                {_id: 8},
+                // change => operators
+                {
+                  $set: {
+                    name: 'babosa',
+                    price: 2,
+                  }
+                });
+                db.products.updateOne(
+                  // query
+                  {_id: 9},
+                  // change => operators
+                  {
+                    $set: {
+                      name: 'murcielago',
+                      price: 30,
+                    }
+                  });
+                  db.products.updateOne(
+                    // query
+                    {_id: 3},
+                    // change => operators
+                    {
+                      $set: {
+                        name: 'pulpo',
+                        price: 2599,
+                      }
+                    });
