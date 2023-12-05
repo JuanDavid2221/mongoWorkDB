@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+   {
+    _id: 1,
+    name: "Simio",
+    price: 100,
+    description: "El simio, primate similar a los humanos, se caracteriza por su cuerpo cubierto de pelo, extremidades adaptables y comportamiento social complejo.",
+    category: "Primate",
+    image: "https://images.app.goo.gl/KvDjZWdKAVmJRGv89"
+  },
+  {
+    _id: 2,
+    name: "Perro",
+    price: 20,
+    description: "El perro, fiel compañero doméstico, es conocido por su lealtad y variedad de razas.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/7FgYW4MFsYQwRThS7g"
+  },
+  {
+    _id: 3,
+    name: "Zarigueya",
+    price: 120,
+    description: "La zarigueya, marsupial nocturno, se caracteriza por su cola prensil y adaptabilidad.",
+    category: "Marsupial",
+    image: "https://images.app.goo.gl/g6pcGHawEGNG6ypK8"
+  },
+  {
+    _id: 4,
+    name: "Mapache",
+    price: 130,
+    description: "El mapache, hábil trepador, destaca por sus manchas faciales características.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/YsqsFUnKgMHpThTT9"
+  },
+  {
+    _id: 5,
+    name: "Gato",
+    price: 140,
+    description: "El gato, felino doméstico, es conocido por su independencia y destreza cazadora.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/YamFpmDLU7jqNdDX9"
+  },
+  {
+    _id: 6,
+    name: "Ratón",
+    price: 150,
+    description: "El ratón, pequeño roedor, es conocido por su reproducción rápida y capacidad de adaptación.",
+    category: "Roedor",
+    image: "https://images.app.goo.gl/VfkmCBNzneynfaTy8"
+  },
+  {
+    _id: 7,
+    name: "Cerdo",
+    price: 160,
+    description: "El cerdo, mamífero doméstico, es apreciado por su carne y su inteligencia sorprendente.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/7AtriEvmKmagJPGr9"
+  },
+  {
+    _id: 8,
+    name: "Serpiente",
+    price: 170,
+    description: "La serpiente, reptil sin extremidades, juega un papel crucial en el equilibrio ecológico como depredador de roedores.",
+    category: "Reptil",
+    image: "https://images.app.goo.gl/vhCpRMg7CgWkMvUe6"
+  },
+  {
+    _id: 9,
+    name: "Guatín",
+    price: 180,
+    description: "El guatín, ave de América Latina, destaca por sus plumajes coloridos y diversidad de especies.",
+    category: "Ave",
+    image: "https://images.app.goo.gl/7RirGwKefsTVqdULA"
+  },
+  {
+    _id: 10,
+    name: "Armadillo",
+    price: 190,
+    description: "El armadillo, mamífero con coraza, se caracteriza por su capacidad de enrollarse para protegerse.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/vnnYCGpif5FGChnD7"
+  },
+  {
+    _id: 11,
+    name: "Cucaracha",
+    price: 200,
+    description: "La cucaracha, insecto resistente, es conocida por su adaptabilidad y presencia en diversos entornos.",
+    category: "Insecto",
+    image: "https://images.app.goo.gl/XiunzDDMVkQeob2bA"
+  },
+  {
+    _id: 12,
+    name: "Vaca",
+    price: 210,
+    description: "La vaca, mamífero rumiante, es una fuente importante de leche y carne en la agricultura.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/pwaofQ97W5zmwRek6"
+  },
+  {
+    _id: 13,
+    name: "Burro",
+    price: 220,
+    description: "El burro, pariente del caballo, es apreciado por su resistencia y capacidad de carga.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/chXDRExVSsTWM42r5"
+  },
+  {
+    _id: 14,
+    name: "Pingüino",
+    price: 230,
+    description: "El pingüino, ave marina no voladora, destaca por su estilo de nado y adaptación al frío.",
+    category: "Ave",
+    image: "https://images.app.goo.gl/H2WaAjXCCNtc5azg8"
+  },
+  {
+    _id: 15,
+    name: "Zorrillo",
+    price: 240,
+    description: "El zorrillo, mamífero con glándulas odoríferas, utiliza su olor como mecanismo de defensa.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/K1ttP9ZLfZ8NeMeFA"
+  },
+  {
+    _id: 16,
+    name: "Cocodrilo",
+    price: 250,
+    description: "El cocodrilo, reptil semiacuático, es un depredador temible en hábitats acuáticos.",
+    category: "Reptil",
+    image: "https://images.app.goo.gl/QiCNdUUBeNKqEc1Z8"
+  },
+  {
+    _id: 17,
+    name: "León",
+    price: 260,
+    description: "El león, felino majestuoso, es conocido como el rey de la selva por su posición en la cadena alimentaria.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/YXCrZWLqTqYfpcdp7"
+  },
+  {
+    _id: 18,
+    name: "Tigre",
+    price: 270,
+    description: "El tigre, felino rayado, es un depredador ágil y poderoso que habita en diversos hábitats.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/dpzdmNQw64tuVQPs8"
+  },
+  {
+    _id: 19,
+    name: "Elefante",
+    price: 280,
+    description: "El elefante, mamífero de gran tamaño, destaca por su inteligencia, trompa prensil y grandes orejas.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/ujVsmrEExFMHzHkt9"
+  },
+  {
+    _id: 20,
+    name: "Puma",
+    price: 290,
+    description: "El puma, felino ágil, es conocido por su capacidad de caza y adaptación a diversos entornos.",
+    category: "Mamífero",
+    image: "https://images.app.goo.gl/dEWfq2i4DdLj4D3C9"
+  }
+])
